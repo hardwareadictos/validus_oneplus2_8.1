@@ -848,7 +848,13 @@ service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
 service qmuxd /system/bin/qmuxd
     class main
     user root
-    group radio audio bluetooth gps diag
+    group radio audio bluetooth gps oem_2950
+    writepid /dev/cpuset/system-background/tasks
+
+service netmgrd /system/bin/netmgrd
+    class main
+    user root
+    group root wifi wakelock radio inet oem_2950
     writepid /dev/cpuset/system-background/tasks
 
 service ipacm-diag /system/bin/ipacm-diag
