@@ -433,7 +433,6 @@ etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
 # Network
--priv-app/QtiTetherService/QtiTetherService.apk|1f88a499a74cff043a296637db1c1dcecaafdee7
 vendor/lib/libconnctrl.so
 vendor/lib64/libconnctrl.so
 vendor/lib64/libQtiTether.so
